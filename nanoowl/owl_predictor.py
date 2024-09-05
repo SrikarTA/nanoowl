@@ -144,7 +144,7 @@ class OwlPredictor(torch.nn.Module):
     
     def __init__(self,
             model_name: str = "google/owlvit-base-patch32",
-            device: str = "cuda",
+            device: str = "cpu",
             image_encoder_engine: Optional[str] = None,
             image_encoder_engine_max_batch_size: int = 1,
             image_preprocessor: Optional[ImagePreprocessor] = None
